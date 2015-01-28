@@ -1,18 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,700,600,800,900|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
-html body .wrapper .main-box:before, html body .wrapper .main-box section article:before, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:before, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:before, .header:before, html body .wrapper .main-box:after, html body .wrapper .main-box section article:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:after, .header:after {
+html body .wrapper .main-box:before, html body .wrapper .main-box section article:before, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:before, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:before, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item:before, .header:before, html body .wrapper .main-box:after, html body .wrapper .main-box section article:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:after, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item:after, .header:after {
   content: "";
   display: table; }
-html body .wrapper .main-box:after, html body .wrapper .main-box section article:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:after, .header:after {
+html body .wrapper .main-box:after, html body .wrapper .main-box section article:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:after, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item:after, .header:after {
   clear: both; }
-html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, .header {
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item, .header {
   zoom: 1; }
 
-html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, .header {
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item, .header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table, html body .wrapper .main-box section.quienes-somos article .table .col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper footer, .header {
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table, html body .wrapper .main-box section.quienes-somos article .table .col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper .main-box section.clientes #gallery-1, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item, .header, footer, footer .redes-contacto, footer .service-footer {
   display: inline-block;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -144,34 +144,42 @@ html body .wrapper .main-box, html body .wrapper .main-box section article, html
 .hide {
   display: none; }
 
-.no-margins, .listas ul, .header nav ul, .listas ul li, .header nav ul li, html body .wrapper .main-box section article .titles {
+.no-margins, .listas ul, .header nav ul, footer ul, .listas ul li, .header nav ul li, footer ul li, html body .wrapper .main-box section article .titles, footer .float-contact .contact-form h4 {
   margin: 0; }
 
-.no-paddings, .listas ul, .header nav ul, .listas ul li, .header nav ul li, html body .wrapper .main-box section article .titles {
+.no-paddings, .listas ul, .header nav ul, footer ul, .listas ul li, .header nav ul li, footer ul li, html body .wrapper .main-box section article .titles {
   padding: 0; }
 
-.text-center, html body .wrapper .main-box, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper footer {
+.text-center, html body .wrapper .main-box, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, footer .redes-contacto li, footer .service-footer .btn_contact, footer .float-contact .btns, footer .float-contact .contact-form, footer .float-contact .contact-form .wpcf7 input, footer .float-contact .contact-form .wpcf7 textarea {
   text-align: center; }
 
 .text-left, html body .wrapper .main-box section.quienes-somos article .table {
   text-align: left; }
 
-.text-right {
+.text-right, footer .service-footer {
   text-align: right; }
 
-.listas ul, .header nav ul {
+.listas ul, .header nav ul, footer ul {
   list-style: none; }
-  .listas ul li, .header nav ul li {
+  .listas ul li, .header nav ul li, footer ul li {
     display: inline-block; }
 
 @media screen and (min-width: 1281px) {
-  .container, html body .wrapper .main-box section {
+  .container, html body .wrapper .main-box section.quienes-somos, html body .wrapper .main-box section.clientes {
     width: 1280px !important;
     margin: 0 auto; } }
 
 .ScrollSceneIndicators {
   display: none; }
 
+html body #logo-active {
+  position: absolute; }
+  @media screen and (max-width: 1281px) {
+    html body #logo-active {
+      top: 450%; } }
+  @media screen and (min-width: 1281px) {
+    html body #logo-active {
+      top: 500%; } }
 html body .wrapper {
   font-family: "Raleway", sans-serif; }
   html body .wrapper .main-box {
@@ -223,13 +231,16 @@ html body .wrapper {
           margin-left: auto;
           margin-right: auto;
           max-width: 40%; }
-      html body .wrapper .main-box section.home {
+      html body .wrapper .main-box section.home, html body .wrapper .main-box section.contactos {
         background: #000; }
-        html body .wrapper .main-box section.home article .titles {
-          max-width: 75%; }
+        html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
+          max-width: 55%; }
           @media screen and (max-width: 1281px) {
-            html body .wrapper .main-box section.home article .titles {
-              margin-top: 25%; } }
+            html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
+              margin-top: 25%;
+              max-width: 75%; } }
+          html body .wrapper .main-box section.home article .titles a, html body .wrapper .main-box section.contactos article .titles a {
+            color: #fff; }
       html body .wrapper .main-box section.quienes-somos article .table {
         float: left;
         direction: ltr;
@@ -291,6 +302,50 @@ html body .wrapper {
               font-size: 18px; }
             html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 p {
               max-width: 100%; }
+      html body .wrapper .main-box section.clientes #gallery-1 {
+        float: left;
+        direction: ltr;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%; }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+          html body .wrapper .main-box section.clientes #gallery-1 {
+            padding-left: 0;
+            padding-right: 0; } }
+        html body .wrapper .main-box section.clientes #gallery-1 .gallery-item {
+          float: left;
+          direction: ltr;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 25%;
+          padding-left: 0;
+          padding-right: 0; }
+          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+            html body .wrapper .main-box section.clientes #gallery-1 .gallery-item {
+              padding-left: 0;
+              padding-right: 0; } }
+          html body .wrapper .main-box section.clientes #gallery-1 .gallery-item .gallery-icon img {
+            border: none; }
+      html body .wrapper .main-box section.contactos {
+        max-height: 490px; }
+        html body .wrapper .main-box section.contactos .titles {
+          position: absolute;
+          left: 0;
+          right: 0;
+          font-weight: 100;
+          z-index: 8; }
+          @media screen and (max-width: 1281px) {
+            html body .wrapper .main-box section.contactos .titles {
+              margin-top: 19% !important; } }
+          @media screen and (min-width: 1281px) {
+            html body .wrapper .main-box section.contactos .titles {
+              margin-top: 13% !important; } }
+        html body .wrapper .main-box section.contactos .image img {
+          position: absolute;
+          left: 0;
+          z-index: 7;
+          top: -10%;
+          width: 100%; }
       html body .wrapper .main-box section video {
         position: absolute;
         z-index: 1;
@@ -298,17 +353,6 @@ html body .wrapper {
         width: 100%;
         top: 0;
         left: 0; }
-  html body .wrapper footer {
-    float: left;
-    direction: ltr;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    font-size: 8px; }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-      html body .wrapper footer {
-        padding-left: 0;
-        padding-right: 0; } }
 
 .header {
   float: left;
@@ -331,3 +375,131 @@ html body .wrapper {
     margin-top: 130px;
     margin-left: auto;
     margin-right: auto; }
+
+footer {
+  float: left;
+  direction: ltr;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  background-color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 8px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    footer {
+      padding-left: 0;
+      padding-right: 0; } }
+  footer .redes-contacto {
+    float: left;
+    direction: ltr;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      footer .redes-contacto {
+        padding-left: 0;
+        padding-right: 0; } }
+    footer .redes-contacto li {
+      background-color: #fff;
+      color: #000;
+      font-size: 20px;
+      padding: 3px;
+      margin-right: 3px;
+      width: 24px;
+      height: 24px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%; }
+  footer .service-footer {
+    float: left;
+    direction: ltr;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      footer .service-footer {
+        padding-left: 0;
+        padding-right: 0; } }
+    footer .service-footer .btn_contact {
+      border: solid 2px #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      float: right;
+      width: 130px;
+      height: 38px;
+      margin-left: 5px;
+      display: table; }
+      footer .service-footer .btn_contact span {
+        cursor: pointer;
+        color: #fff;
+        display: table-cell;
+        vertical-align: middle; }
+      footer .service-footer .btn_contact a {
+        text-decoration: none;
+        color: #fff;
+        display: table-cell;
+        vertical-align: middle; }
+  footer .float-contact {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 9;
+    width: 132px;
+    right: 20px; }
+    footer .float-contact .btns {
+      float: right;
+      color: #fff;
+      background-color: #000;
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+      display: table;
+      font-size: 20px; }
+      footer .float-contact .btns i {
+        display: table-cell;
+        vertical-align: middle; }
+    footer .float-contact .contact-form {
+      position: absolute;
+      overflow: hidden;
+      height: 0;
+      width: 273px;
+      background-color: #000;
+      bottom: 70px;
+      right: 60px; }
+      footer .float-contact .contact-form h4 {
+        color: #fff;
+        font-size: 21px;
+        font-weight: 100;
+        text-transform: uppercase; }
+      footer .float-contact .contact-form .fa {
+        font-size: 28px;
+        color: #fff;
+        margin: 5px 0; }
+      footer .float-contact .contact-form .wpcf7 input {
+        width: 85%;
+        height: 43px;
+        font-size: 14px; }
+      footer .float-contact .contact-form .wpcf7 input[type="submit"] {
+        width: 50%;
+        border: 2px solid #fff;
+        background-color: #000;
+        color: #fff;
+        font-size: 20px; }
+      footer .float-contact .contact-form .wpcf7 textarea {
+        width: 85%;
+        height: 185px;
+        font-size: 14px; }
+      footer .float-contact .contact-form .wpcf7 .ajax-loader {
+        display: none; }
+    footer .float-contact .indicator {
+      display: none;
+      position: absolute;
+      bottom: 41px;
+      font-size: 50px;
+      color: #000;
+      right: 72px; }

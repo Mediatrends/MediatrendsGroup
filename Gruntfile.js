@@ -1,5 +1,6 @@
 module.exports = function(grunt){
 	require('jit-grunt')(grunt);
+	require('time-grunt')(grunt);
 	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -9,6 +10,7 @@ module.exports = function(grunt){
 				files:['prod/sass/**/*.scss','prod/js/**/*.js','app/wp-content/themes/mtgroup/**/*.php'],
 				options:{
 					livereload: true,
+					spawn: false,
 				},
 			},
 
@@ -17,6 +19,7 @@ module.exports = function(grunt){
 				tasks: ['sass:deve'],
 				options:{
 					livereload:true,
+					spawn: false,
 				},
 			},
 
@@ -25,6 +28,7 @@ module.exports = function(grunt){
 				tasks:['jshint','uglify:beauty'],
 				options:{
 					livereload:true,
+					spawn: false,
 				},
 			},
 		},
@@ -71,14 +75,40 @@ module.exports = function(grunt){
 			    }
 			}
 		},
+
+		imagemin:{
+			options: {
+				cache: false
+			},
+			dynamic: {                       // Another target
+		      files: [{
+		        expand: true,                  // Enable dynamic expansion
+		        cwd: 'prod/img/',                   // Src matches are relative to this path
+		        src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+		        dest: 'app/wp-content/themes/mtgroup/img/'                  // Destination path prefix
+		      }]
+		    },
+		},
+
+	    concurrent: {
+	        target: {
+	        	tasks:['sass','jshint','uglify'],
+		    	options: {
+	                logConcurrentOutput: true
+	            },
+		    }
+	    },
+
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-concurrent');
 
-	grunt.registerTask('dev', ['watch']);
-	grunt.registerTask('default', ['uglify:all','sass:dist']);
+	grunt.registerTask('dev', ['concurrent','watch']);
+	grunt.registerTask('default', ['uglify:all','imagemin','sass:dist']);
 
 };

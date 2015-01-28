@@ -1,0 +1,8 @@
+{
+  "name": "bw-bourbon",
+  "version": "4.1.1",
+  "main": "./_bourbon.scss",
+  "ignore": [],
+  "dependencies": {
+  }
+}

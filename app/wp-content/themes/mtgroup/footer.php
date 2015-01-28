@@ -1,12 +1,33 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+				<ul class="redes-contacto">
+					<li><i class="fa fa-facebook"></i></li>
+					<li><i class="fa fa-twitter"></i></li>
+					<li><i class="fa fa-instagram"></i></li>
+				</ul>
+
+				<div class="service-footer">
+					
+					<div class="btn_contact"><a href="">ubicación</a></div>
+					<div class="btn_contact open-form"><span>contacto</span></div>
+
+				</div>
+
+				<div class="float-contact">
+					<div class="btns" id="scroll-up"><i class="fa fa-chevron-up"></i></div>
+					<div class="btns open-form"><i class="fa fa-envelope"></i></div>
+
+					<div class="contact-form">
+						<div>
+							<i class="fa fa-envelope"></i>
+							<h4>contactanos</h4>
+							<?php echo do_shortcode( '[contact-form-7 id="82" title="Contacto MTGroup"]' ); ?>
+						</div>
+
+					</div>
+					<i class="fa fa-caret-down indicator"></i>
+				</div>
 
 			</footer>
 			<!-- /footer -->

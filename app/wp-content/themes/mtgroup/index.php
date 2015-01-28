@@ -21,6 +21,12 @@
 			<?php get_template_part('loop-clientes'); ?>
 
 		</section>
+
+		<section class="contactos">
+			
+			<?php get_template_part('loop-contacto'); ?>
+
+		</section>
 		<!-- /section -->
 	</main>
 

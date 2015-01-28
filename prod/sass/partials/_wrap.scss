@@ -1,5 +1,15 @@
 html{
 	body{
+		#logo-active{
+			position: absolute;
+			@include gridle_state(notebook-min){
+				top:450%;
+			}
+			@include gridle_state(desktopess){
+				top:500%;
+			}
+			
+		}
 		.wrapper{
 			font:{family:$_fontfamily;}
 			.main-box{
@@ -7,7 +17,6 @@ html{
 				@include gridle_parent();
 				@extend .text-center;
 				section{
-					@extend .container;
 					overflow: hidden;
 					position: relative;
 					article{
@@ -37,14 +46,19 @@ html{
 						background: #000;
 						article{
 							.titles{
-								max-width: 75%;
+								max-width: 55%;
 								@include gridle_state(notebook-min){
 									margin:{top:25%;}
+									max-width: 75%;
+								}
+								a{
+									color:#fff;
 								}
 							}
 						}
 					}
 					&.quienes-somos{
+						@extend .container;
 						article{
 							.table{
 								@include gridle(12);
@@ -79,6 +93,47 @@ html{
 							}
 						}
 					}
+					&.clientes{
+						@extend .container;
+						#gallery-1{
+							@include gridle(12);
+							.gallery-item{
+								@include gridle(3);
+								@include gridle_parent();
+								.gallery-icon{
+									img{
+										border:none;
+									}
+								}
+							}
+						}
+					}
+					&.contactos{
+						@extend .home;
+						max-height:490px;
+						.titles{
+							position:absolute;
+							left:0;
+							right:0;
+							font:{weight:100;}
+							@include gridle_state(notebook-min){
+								margin:{top:19% !important;}
+							}
+							@include gridle_state(desktopess){
+								margin:{top:13% !important;}
+							}
+							z-index: 8
+						}
+						.image{
+							img{
+								position: absolute;
+								left: 0;
+								z-index: 7;
+								top:-10%;
+								width:100%;
+							}
+						}
+					}
 					video{
 						position: absolute;
 						z-index: 1;
@@ -88,11 +143,6 @@ html{
 						left:0;
 					}
 				}
-			}
-			footer{
-				@include gridle(12);
-				@extend .text-center;
-				font:{size:8px;}
 			}
 		}
 	}

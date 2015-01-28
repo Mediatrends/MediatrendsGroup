@@ -17,7 +17,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php include (TEMPLATEPATH . '/svg_material.php'); ?>
-		<div style="position: absolute;top:450%;" id="logo-active"></div>
+		<div id="logo-active"></div>
 		<!-- wrapper -->
 		<div class="wrapper" id="start-pin">
 
