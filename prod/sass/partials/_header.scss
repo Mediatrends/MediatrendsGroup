@@ -1,0 +1,15 @@
+.header{
+	@include gridle(12);
+	@include gridle_parent();
+	background: #000;
+	height: 115px;
+	position: relative;
+	z-index: 9;
+	.logo{
+		width:231px;
+		margin:{top:130px;left:auto;right:auto;}
+	}
+	nav{
+		@extend .listas;
+	}
+}

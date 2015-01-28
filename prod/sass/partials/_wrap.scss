@@ -1,0 +1,99 @@
+html{
+	body{
+		.wrapper{
+			font:{family:$_fontfamily;}
+			.main-box{
+				@include gridle(12);
+				@include gridle_parent();
+				@extend .text-center;
+				section{
+					@extend .container;
+					overflow: hidden;
+					position: relative;
+					article{
+						@include gridle(12);
+						@include gridle_parent();
+						min-height: 800px;
+						position: relative;
+						z-index: 8;
+						.titles{
+							font:{size:50px;weight:300;family:$_fontfamily;weight:700;}
+							margin:{top:20%;left:auto;right:auto;}
+							text:{transform:uppercase;}
+							@extend .no-margins;
+							@extend .no-paddings;
+							a{
+								text:{decoration:none;}
+								color:#000;
+							}
+						}
+						p{
+							font:{size:12px;family:$_fontfamily2;}
+							margin:{top:10px;left:auto;right:auto;}
+							max-width:40%;
+						}
+					}
+					&.home{
+						background: #000;
+						article{
+							.titles{
+								max-width: 75%;
+								@include gridle_state(notebook-min){
+									margin:{top:25%;}
+								}
+							}
+						}
+					}
+					&.quienes-somos{
+						article{
+							.table{
+								@include gridle(12);
+								@extend .text-left;
+								margin:{top:50px;}
+								.col{
+									@include gridle(4);
+									@include gridle(12, phoness-min phoness);
+									.inner-col{
+										@include gridle(2);
+										@include gridle_parent();
+										@extend .text-center;
+										display: table;
+										height: 160px;
+										i{
+											font:{size: 40px;}
+											vertical-align: middle;
+											display: table-cell;
+										}
+									}
+									.inner-col2{
+										@include gridle(10);
+										@include gridle_parent();
+										h3{
+											font:{size:18px;}
+										}
+										p{
+											max-width:100%;
+										}
+									}
+								}
+							}
+						}
+					}
+					video{
+						position: absolute;
+						z-index: 1;
+						height: 100%;
+						width:100%;
+						top:0;
+						left:0;
+					}
+				}
+			}
+			footer{
+				@include gridle(12);
+				@extend .text-center;
+				font:{size:8px;}
+			}
+		}
+	}
+}

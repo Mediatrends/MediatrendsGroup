@@ -1,0 +1,333 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,700,600,800,900|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+html body .wrapper .main-box:before, html body .wrapper .main-box section article:before, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:before, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:before, .header:before, html body .wrapper .main-box:after, html body .wrapper .main-box section article:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:after, .header:after {
+  content: "";
+  display: table; }
+html body .wrapper .main-box:after, html body .wrapper .main-box section article:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col:after, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2:after, .header:after {
+  clear: both; }
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, .header {
+  zoom: 1; }
+
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, .header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table, html body .wrapper .main-box section.quienes-somos article .table .col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper footer, .header {
+  display: inline-block;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Str replace
+ *
+ * @param {string}  $string    String that you want to replace
+ * @param {string}  $substr    String that is to be replaced by `$newsubstr`
+ * @param {string}  $newsubstr String that replaces `$substr`
+ * @param {number*} $all       Flag for replaceing all (1+) or not (0)
+ * @return {string}
+ */
+/**
+ * Map set
+ *
+ * @param 	Map 	$map 		The map to use
+ * @param 	String 	$key 		The key to update
+ * @param 	Mixed 	$value 		The new value
+ * @return 	Map 			The new map
+ */
+/**
+ * Get the column width in percent for the global or a specific context
+ *
+ * @param 	int 		$columns 					The number of columns to calculate
+ * @param 	int 		$context : $gridle-columns-count 	 	The context to use
+ * @return 	percentage 							The width in percent
+ */
+/**
+ *  Get a state map
+ *
+ * @param 	string 		$name 		The name of the state to get
+ * @return 	map 				A state map object
+ */
+/**
+ * Check if a state exist :
+ *
+ * @param 	string 		$name 		The name of the state to check
+ * @return 	Boolean 			true is exist
+ */
+/**
+ * Get the media queries variables :
+ *
+ * @param 	int 		$index 	 	The media query indes
+ * @param 	String 		$var 		The media query variable name
+ * @return 	String|int 			The variable value
+ */
+/**
+ * Get a variable
+ *
+ * @param 	String 		$varName 				The variable name
+ * @param  	String 		$stateMap-or-stateName 	 	The state name or a map state value
+ * @return 	Mixed 							The finded value
+ */
+/**
+ * Set a variable in a state
+ * @param 	Mixed $stateName-or-stateIndex 	The state name of state index
+ * @param  	String $var                    		Variable name to assign
+ * @param  	Mixed $newValue          		The new value to assign
+ * @return 	List                         			The states list (full)
+ */
+/**
+ * Generate a column
+ *
+ * @param 	String 		$name 			The column name (often count)
+ * @param 	int 		$columns 		The column count that the column will take
+ * @param 	int 		$context 		The context on witch the with will be calculed
+ * @param 	Boolean 	$generateClasses 	Set if the column has to be generated in css
+ */
+/**
+ * Generate classname
+ *
+ * @param 	List 		$parrern 	The pattern to use to generate classname
+ * @param 	String 		$state 		The state
+ * @param 	int 		$count 		The column count
+ */
+/**
+ * Get the media query for a particular state, or with, etc...
+ *
+ * @param 	Mixed 		$state-or-min-width 		The state name of the min with
+ * @param 	Mixed 		$max-width 			The max width if first param is a min width
+ * @return 	String 						The media query string without the @media
+ */
+/**
+ * Get states count
+ * 
+ * @return 	int 	The number of states defined
+ */
+/**
+ * Setup
+ */
+/**
+ *  Register a clear each class
+ */
+/**
+ * Register a special class
+ */
+/**
+ * Register default states
+ */
+/**
+ * Register default mobile first states :
+ */
+/**
+ * Set the debug device (not used for now)
+ * 
+ * @param 	String 		$state 		The state to update
+ * @para m 	String 		$device 	The device to use (iphone, etc...)
+ */
+/**
+ * Parent clear each
+ */
+/**
+ * Vertical align :
+ */
+/**
+ * Show inline
+ *
+ * @param 	String 		$state 		The state name
+ */
+/**
+ * Generate a custom class for all the states
+ *
+ * @param 	list 	$pattern 		The name pattern of the class
+ * @param 	list 	$statesNames 		The states names to generate
+ */
+.hide {
+  display: none; }
+
+.no-margins, .listas ul, .header nav ul, .listas ul li, .header nav ul li, html body .wrapper .main-box section article .titles {
+  margin: 0; }
+
+.no-paddings, .listas ul, .header nav ul, .listas ul li, .header nav ul li, html body .wrapper .main-box section article .titles {
+  padding: 0; }
+
+.text-center, html body .wrapper .main-box, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper footer {
+  text-align: center; }
+
+.text-left, html body .wrapper .main-box section.quienes-somos article .table {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.listas ul, .header nav ul {
+  list-style: none; }
+  .listas ul li, .header nav ul li {
+    display: inline-block; }
+
+@media screen and (min-width: 1281px) {
+  .container, html body .wrapper .main-box section {
+    width: 1280px !important;
+    margin: 0 auto; } }
+
+.ScrollSceneIndicators {
+  display: none; }
+
+html body .wrapper {
+  font-family: "Raleway", sans-serif; }
+  html body .wrapper .main-box {
+    float: left;
+    direction: ltr;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      html body .wrapper .main-box {
+        padding-left: 0;
+        padding-right: 0; } }
+    html body .wrapper .main-box section {
+      overflow: hidden;
+      position: relative; }
+      html body .wrapper .main-box section article {
+        float: left;
+        direction: ltr;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 800px;
+        position: relative;
+        z-index: 8; }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+          html body .wrapper .main-box section article {
+            padding-left: 0;
+            padding-right: 0; } }
+        html body .wrapper .main-box section article .titles {
+          font-size: 50px;
+          font-weight: 300;
+          font-family: "Raleway", sans-serif;
+          font-weight: 700;
+          margin-top: 20%;
+          margin-left: auto;
+          margin-right: auto;
+          text-transform: uppercase; }
+          html body .wrapper .main-box section article .titles a {
+            text-decoration: none;
+            color: #000; }
+        html body .wrapper .main-box section article p {
+          font-size: 12px;
+          font-family: "Roboto", sans-serif;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 40%; }
+      html body .wrapper .main-box section.home {
+        background: #000; }
+        html body .wrapper .main-box section.home article .titles {
+          max-width: 75%; }
+          @media screen and (max-width: 1281px) {
+            html body .wrapper .main-box section.home article .titles {
+              margin-top: 25%; } }
+      html body .wrapper .main-box section.quienes-somos article .table {
+        float: left;
+        direction: ltr;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        margin-top: 50px; }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+          html body .wrapper .main-box section.quienes-somos article .table {
+            padding-left: 0;
+            padding-right: 0; } }
+        html body .wrapper .main-box section.quienes-somos article .table .col {
+          float: left;
+          direction: ltr;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 33.33333%; }
+          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+            html body .wrapper .main-box section.quienes-somos article .table .col {
+              padding-left: 0;
+              padding-right: 0; } }
+          @media screen and (max-width: 480px) {
+            html body .wrapper .main-box section.quienes-somos article .table .col {
+              width: 100%; } }
+          @media screen and (max-width: 768px) {
+            html body .wrapper .main-box section.quienes-somos article .table .col {
+              width: 100%; } }
+          html body .wrapper .main-box section.quienes-somos article .table .col .inner-col {
+            float: left;
+            direction: ltr;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 16.66667%;
+            padding-left: 0;
+            padding-right: 0;
+            display: table;
+            height: 160px; }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col {
+                padding-left: 0;
+                padding-right: 0; } }
+            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col i {
+              font-size: 40px;
+              vertical-align: middle;
+              display: table-cell; }
+          html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 {
+            float: left;
+            direction: ltr;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 83.33333%;
+            padding-left: 0;
+            padding-right: 0; }
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 {
+                padding-left: 0;
+                padding-right: 0; } }
+            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 h3 {
+              font-size: 18px; }
+            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 p {
+              max-width: 100%; }
+      html body .wrapper .main-box section video {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0; }
+  html body .wrapper footer {
+    float: left;
+    direction: ltr;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-size: 8px; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      html body .wrapper footer {
+        padding-left: 0;
+        padding-right: 0; } }
+
+.header {
+  float: left;
+  direction: ltr;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background: #000;
+  height: 115px;
+  position: relative;
+  z-index: 9; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .header {
+      padding-left: 0;
+      padding-right: 0; } }
+  .header .logo {
+    width: 231px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto; }

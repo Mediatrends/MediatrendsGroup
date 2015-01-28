@@ -6,11 +6,12 @@ module.exports = function(grunt){
 
 		watch:{
 			configFiles:{
-				files:['prod/sass/**/*.scss','prod/js/**/*.js','app/wp-content/themes/chilerunning_new/**/*.php'],
+				files:['prod/sass/**/*.scss','prod/js/**/*.js','app/wp-content/themes/mtgroup/**/*.php'],
 				options:{
 					livereload: true,
 				},
 			},
+
 			sass:{
 				files:['prod/sass/**/*.scss'],
 				tasks: ['sass:deve'],
@@ -18,6 +19,7 @@ module.exports = function(grunt){
 					livereload:true,
 				},
 			},
+
 			javascript:{
 				files:['prod/js/**/*.js','Gruntfile.js'],
 				tasks:['jshint','uglify:beauty'],
@@ -30,21 +32,24 @@ module.exports = function(grunt){
 		sass: {
 			deve: {
 				options: {
-					style: 'nested'
+					style: 'nested',
+					sourcemap:'none'
 				},
 				files: {
-					'app/wp-content/themes//*url_theme*//css/main.css': 'prod/sass/main.scss'
+					'app/wp-content/themes/mtgroup/css/main.min.css': 'prod/sass/main.scss'
 				},
 			},
 			dist: {
 				options: {
-					style: 'compressed'
+					style: 'compressed',
+					sourcemap:'none'
 				},
 				files: {
-					'app/wp-content/themes//*url_theme*//css/main.css': 'prod/sass/main.scss'
+					'app/wp-content/themes/mtgroup/css/main.min.css': 'prod/sass/main.scss'
 				},
 			},
 		},
+
 		jshint:{
 			all:[
 				'Gruntfile.js','prod/js/**/*.js'
@@ -55,11 +60,14 @@ module.exports = function(grunt){
 			beauty:{
 				options:{
 					beautify:true
-				}	
+				},
+				files:{
+			        'app/wp-content/themes/mtgroup/js/output.min.js': ['prod/js/script.js']
+			    }
 			},
 			all:{
 				files:{
-			        'app/wp-content/themes//*url_theme*//js/output.min.js': ['prod/js/scripts.js']
+			        'app/wp-content/themes/mtgroup/js/output.min.js': ['prod/js/script.js']
 			    }
 			}
 		},
@@ -71,6 +79,6 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	grunt.registerTask('dev', ['watch']);
-	grunt.registerTask('default', ['sass:dist','uglify:all']);
+	grunt.registerTask('default', ['uglify:all','sass:dist']);
 
 };

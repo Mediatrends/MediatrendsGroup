@@ -1,0 +1,39 @@
+.hide{
+	@include gridle_hide();
+}
+.no-margins{
+	margin:0;
+}
+.no-paddings{
+	padding:0;
+}
+.text-center{
+	text-align:center;
+}
+.text-left{
+	text-align:left;
+}
+.text-right{
+	text-align:right;
+}
+.listas{
+	ul{
+		list-style: none;
+		@extend .no-paddings;
+		@extend .no-margins;
+		li{
+			display: inline-block;
+			@extend .no-paddings;
+			@extend .no-margins;
+		}
+	}
+}
+.container{
+	@include gridle_state(desktopess){
+		width:1280px !important;
+		margin:0 auto;
+	}
+}
+.ScrollSceneIndicators{
+	@include gridle_hide();
+}
