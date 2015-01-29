@@ -4,25 +4,29 @@
 		<!-- section -->
 		<section class="home"> 
 			
-			<video class="video-loop" preload="auto" loop autoplay><source src="https://s3.amazonaws.com/distill-videos/videos/processed/34/State-Fair-2013-HD-2.mp4" type="video/mp4" /><span title="No video playback capabilities, please download the video below"></span></video>
+			<video class="video-loop" preload="auto" loop autoplay>
+				<source type="video/mp4" src="http://ak1.picdn.net/shutterstock/videos/6258950/preview/stock-footage-friends-with-sparklers-dancing-in-slow-motion.mp4">
+				<source type="video/webm" src="http://ak1.picdn.net/shutterstock/videos/6258950/preview/stock-footage-friends-with-sparklers-dancing-in-slow-motion.webm">
+				<span title="No video playback capabilities, please download the video below"></span>
+			</video>
 
 			<?php get_template_part('loop'); ?>
 
 		</section>
 
-		<section class="quienes-somos"> 
+		<section class="quienes-somos" name="q-somos" id="q-somos"> 
 
 			<?php get_template_part('loop-qs'); ?>
 
 		</section>
 
-		<section class="clientes"> 
+		<section class="clientes" name="n-clientes" id="n-clientes"> 
 
 			<?php get_template_part('loop-clientes'); ?>
 
 		</section>
 
-		<section class="contactos">
+		<section class="contactos" name="contacto" id="contacto">
 			
 			<?php get_template_part('loop-contacto'); ?>
 

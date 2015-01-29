@@ -2,14 +2,14 @@
 			<footer class="footer" role="contentinfo">
 
 				<ul class="redes-contacto">
-					<li><i class="fa fa-facebook"></i></li>
-					<li><i class="fa fa-twitter"></i></li>
-					<li><i class="fa fa-instagram"></i></li>
+					<li><a href="https://www.facebook.com/pages/Media-Trends-Group/596139610518485" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<!--li><i class="fa fa-twitter"></i></li>
+					<li><i class="fa fa-instagram"></i></li-->
 				</ul>
 
 				<div class="service-footer">
 					
-					<div class="btn_contact"><a href="">ubicación</a></div>
+					<!--div class="btn_contact"><a href="">ubicación</a></div-->
 					<div class="btn_contact open-form"><span>contacto</span></div>
 
 				</div>

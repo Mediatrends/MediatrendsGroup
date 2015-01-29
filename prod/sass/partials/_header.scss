@@ -8,8 +8,96 @@
 	.logo{
 		width:231px;
 		margin:{top:130px;left:auto;right:auto;}
+		position: relative;
+		z-index: 10;
 	}
 	nav{
 		@extend .listas;
+	}
+	.tools{
+		@include gridle(12);
+		position: absolute;
+		z-index: 9;
+		color:#fff;
+		padding:{top:35px;}
+		font:{size:25px;}
+		.menu{
+			@include gridle(6);
+			cursor:pointer;
+		}
+		.redes{
+			@extend .menu;
+			@extend .listas;
+			@extend .text-right;
+			li{
+				@extend .rrss-style;
+			}
+		}
+	}
+	.show-menu{
+		@include gridle_hide();
+		position: fixed;
+		width:100%;
+		height:100%;
+		background:{color:#000;}
+		z-index: 10;
+		.nav{
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			@include gridle(6);
+			@include gridle(10, phoness);
+			@include gridle(6, phoness-min);
+			@extend .text-center;
+			margin: {top:35%;}
+			text:{transform:uppercase;}
+			a{
+				color:#fff;
+				text:{decoration:none;}
+				padding:{right:25px;}
+				&:hover{
+					text:{decoration:underline;}
+				}
+			}
+			@include gridle_state(desktopess){
+				margin:{top:25%;}
+			}
+			@include gridle_state(table-min){
+				margin:{top:45%;}
+			}
+			@include gridle_state(phoness){
+				margin:{top:55%;}
+			}
+			@include gridle_state(phoness-min){
+				margin:{top:120%;}
+				li{
+					margin:{bottom: 10px;}
+				}
+				a{
+					padding:{right:0;}
+				}
+			}
+		}
+		.redes{
+			@extend .nav;
+			@extend .listas;
+			margin:{top:30%;}
+			@include gridle_state(desktopess){
+				margin:{top:22%;}
+			}
+			@include gridle_state(table-min){
+				margin:{top:40%;}
+			}
+			@include gridle_state(phoness){
+				margin:{top:50%;}
+			}
+			@include gridle_state(phoness-min){
+				margin:{top:110%;}
+			}
+			li{
+				@extend .rrss-style;
+			}
+		}
 	}
 }

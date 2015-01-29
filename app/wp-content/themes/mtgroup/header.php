@@ -18,12 +18,47 @@
 	<body <?php body_class(); ?>>
 		<?php include (TEMPLATEPATH . '/svg_material.php'); ?>
 		<div id="logo-active"></div>
+
 		<!-- wrapper -->
 		<div class="wrapper" id="start-pin">
 
 			<!-- header -->
 			<header class="header clear" role="banner" id="header">
+					
+					<div class="show-menu">
+						
+						<div class="redes">
+							<ul class="redes-contacto">
+								<li><a href="https://www.facebook.com/pages/Media-Trends-Group/596139610518485" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<!--li><i class="fa fa-twitter"></i></li>
+								<li><i class="fa fa-instagram"></i></li-->
+							</ul>
+						</div>
 
+						<!-- nav -->
+						<nav class="nav" role="navigation">
+							<?php //html5blank_nav(); ?>
+	
+							<ul>
+								<li><a href="#q-somos">Quienes somos</a></li>
+								<li><a href="#n-clientes">Nuestros clientes</a></li>
+								<li><a href="#contacto">Contacto</a></li>
+							</ul>
+						</nav>
+						<!-- /nav -->
+
+					</div>
+
+					<div class="tools">
+						<div class="menu open-menu"><i class="fa fa-bars"></i></div>
+						<div class="redes">
+							<ul class="redes-contacto">
+								<li><a href="https://www.facebook.com/pages/Media-Trends-Group/596139610518485" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<!--li><i class="fa fa-twitter"></i></li>
+								<li><i class="fa fa-instagram"></i></li-->
+							</ul>
+						</div>
+					</div>
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -33,12 +68,6 @@
 						</a>
 					</div>
 					<!-- /logo -->
-
-					<!-- nav -->
-					<!--nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav-->
-					<!-- /nav -->
 
 			</header>
 			<!-- /header -->

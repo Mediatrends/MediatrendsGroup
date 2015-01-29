@@ -8,7 +8,12 @@ html{
 			@include gridle_state(desktopess){
 				top:500%;
 			}
-			
+			@include gridle_state(phoness){
+				top:550%;
+			}
+			@include gridle_state(phoness-min){
+				top:420%;
+			}
 		}
 		.wrapper{
 			font:{family:$_fontfamily;}
@@ -22,37 +27,62 @@ html{
 					article{
 						@include gridle(12);
 						@include gridle_parent();
-						min-height: 800px;
 						position: relative;
 						z-index: 8;
 						.titles{
 							font:{size:50px;weight:300;family:$_fontfamily;weight:700;}
-							margin:{top:20%;left:auto;right:auto;}
+							margin:{top:15%;left:auto;right:auto;}
 							text:{transform:uppercase;}
 							@extend .no-margins;
 							@extend .no-paddings;
-							a{
-								text:{decoration:none;}
-								color:#000;
+							color:#000;
+							@include gridle_state(table-min){
+								margin:{top:25%;}
 							}
 						}
 						p{
-							font:{size:12px;family:$_fontfamily2;}
 							margin:{top:10px;left:auto;right:auto;}
-							max-width:40%;
+							@include gridle_state(desktopess notebook-min){
+								font:{size:12px;family:$_fontfamily2;}
+								max-width:40%;
+							}
+							@include gridle_state(phoness table-min){
+								max-width:50%;
+								font:{size:17px;}
+							}
+						}
+						@include gridle_state(desktopess){
+							min-height: 800px !important;
 						}
 					}
 					&.home{
 						background: #000;
 						article{
+							@include gridle_state(table-min){
+								min-height:660px;
+							}
+							@include gridle_state(phoness){
+								min-height:930px;
+							}
+							@include gridle_state(phoness-min){
+								min-height:553px;
+							}
 							.titles{
 								max-width: 55%;
+								color:#fff;
 								@include gridle_state(notebook-min){
 									margin:{top:25%;}
 									max-width: 75%;
 								}
-								a{
-									color:#fff;
+								@include gridle_state(phoness){
+									margin:{top:55%;}
+									max-width: 98%;
+									font:{size: 40px;}
+								}
+								@include gridle_state(phoness-min){
+									margin:{top:84%;}
+									max-width: 94%;
+									font:{size: 21px;}
 								}
 							}
 						}
@@ -60,6 +90,20 @@ html{
 					&.quienes-somos{
 						@extend .container;
 						article{
+							min-height:750px;
+							@include gridle_state(table-min){
+								min-height:600px;
+							}
+							@include gridle_state(phoness-min){
+								padding:{top:70px;}
+								.titles{
+									font:{size:40px;}
+								}
+								p{
+									font:{size:14px;}
+									max-width:90%;
+								}
+							}
 							.table{
 								@include gridle(12);
 								@extend .text-left;
@@ -95,20 +139,38 @@ html{
 					}
 					&.clientes{
 						@extend .container;
+						article{
+							@include gridle_state(phoness-min){
+								padding:{top:70px;}
+								.titles{
+									font:{size:40px;}
+								}
+								p{
+									font:{size:14px;}
+									max-width:90%;
+								}
+							}
+						}
 						#gallery-1{
 							@include gridle(12);
 							.gallery-item{
 								@include gridle(3);
+								@include gridle(6, phoness-min);
 								@include gridle_parent();
 								.gallery-icon{
+									overflow: hidden;
+									position: relative;
 									img{
 										border:none;
+										width:100%;
+										height: auto;
 									}
 								}
 							}
 						}
 					}
 					&.contactos{
+						@include gridle_hide(phoness-min);
 						@extend .home;
 						max-height:490px;
 						.titles{
@@ -122,7 +184,7 @@ html{
 							@include gridle_state(desktopess){
 								margin:{top:13% !important;}
 							}
-							z-index: 8
+							z-index: 8;
 						}
 						.image{
 							img{
@@ -141,6 +203,7 @@ html{
 						width:100%;
 						top:0;
 						left:0;
+						@include gridle_hide(phoness phoness-min);
 					}
 				}
 			}

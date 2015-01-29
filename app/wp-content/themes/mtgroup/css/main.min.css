@@ -12,7 +12,7 @@ html body .wrapper .main-box, html body .wrapper .main-box section article, html
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table, html body .wrapper .main-box section.quienes-somos article .table .col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper .main-box section.clientes #gallery-1, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item, .header, footer, footer .redes-contacto, footer .service-footer {
+html body .wrapper .main-box, html body .wrapper .main-box section article, html body .wrapper .main-box section.quienes-somos article .table, html body .wrapper .main-box section.quienes-somos article .table .col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2, html body .wrapper .main-box section.clientes #gallery-1, html body .wrapper .main-box section.clientes #gallery-1 .gallery-item, .header, .header .tools, .header .tools .menu, .header .tools .redes, .header .show-menu .nav, .header .show-menu .redes, footer, footer .redes-contacto, footer .service-footer {
   display: inline-block;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -144,25 +144,48 @@ html body .wrapper .main-box, html body .wrapper .main-box section article, html
 .hide {
   display: none; }
 
-.no-margins, .listas ul, .header nav ul, footer ul, .listas ul li, .header nav ul li, footer ul li, html body .wrapper .main-box section article .titles, footer .float-contact .contact-form h4 {
+.no-margins, .listas ul, .header nav ul, .header .tools .redes ul, .header .show-menu .redes ul, footer ul, .listas ul li, .header nav ul li, .header .tools .redes ul li, .header .show-menu .redes ul li, footer ul li, html body .wrapper .main-box section article .titles, footer .float-contact .contact-form h4 {
   margin: 0; }
 
-.no-paddings, .listas ul, .header nav ul, footer ul, .listas ul li, .header nav ul li, footer ul li, html body .wrapper .main-box section article .titles {
+.no-paddings, .listas ul, .header nav ul, .header .tools .redes ul, .header .show-menu .redes ul, footer ul, .listas ul li, .header nav ul li, .header .tools .redes ul li, .header .show-menu .redes ul li, footer ul li, html body .wrapper .main-box section article .titles {
   padding: 0; }
 
-.text-center, html body .wrapper .main-box, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, footer .redes-contacto li, footer .service-footer .btn_contact, footer .float-contact .btns, footer .float-contact .contact-form, footer .float-contact .contact-form .wpcf7 input, footer .float-contact .contact-form .wpcf7 textarea {
+.text-center, .rrss-style, .header .tools .redes li, .header .show-menu .redes li, footer .redes-contacto li, html body .wrapper .main-box, html body .wrapper .main-box section.quienes-somos article .table .col .inner-col, .header .show-menu .nav, .header .show-menu .redes, footer .service-footer .btn_contact, footer .float-contact .btns, footer .float-contact .contact-form, footer .float-contact .contact-form .wpcf7 input, footer .float-contact .contact-form .wpcf7 textarea {
   text-align: center; }
 
 .text-left, html body .wrapper .main-box section.quienes-somos article .table {
   text-align: left; }
 
-.text-right, footer .service-footer {
+.text-right, .header .tools .redes, footer .service-footer {
   text-align: right; }
 
-.listas ul, .header nav ul, footer ul {
+.listas ul, .header nav ul, .header .tools .redes ul, .header .show-menu .redes ul, footer ul {
   list-style: none; }
-  .listas ul li, .header nav ul li, footer ul li {
+  .listas ul li, .header nav ul li, .header .tools .redes ul li, .header .show-menu .redes ul li, footer ul li {
     display: inline-block; }
+
+.rrss-style, .header .tools .redes li, .header .show-menu .redes li, footer .redes-contacto li {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  padding: 3px;
+  margin-right: 3px;
+  width: 24px;
+  height: 24px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%; }
+  .rrss-style a, .header .tools .redes li a, .header .show-menu .redes li a, footer .redes-contacto li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%; }
 
 @media screen and (min-width: 1281px) {
   .container, html body .wrapper .main-box section.quienes-somos, html body .wrapper .main-box section.clientes {
@@ -180,6 +203,12 @@ html body #logo-active {
   @media screen and (min-width: 1281px) {
     html body #logo-active {
       top: 500%; } }
+  @media screen and (max-width: 768px) {
+    html body #logo-active {
+      top: 550%; } }
+  @media screen and (max-width: 480px) {
+    html body #logo-active {
+      top: 420%; } }
 html body .wrapper {
   font-family: "Raleway", sans-serif; }
   html body .wrapper .main-box {
@@ -205,7 +234,6 @@ html body .wrapper {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
-        min-height: 800px;
         position: relative;
         z-index: 8; }
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -217,91 +245,142 @@ html body .wrapper {
           font-weight: 300;
           font-family: "Raleway", sans-serif;
           font-weight: 700;
-          margin-top: 20%;
+          margin-top: 15%;
           margin-left: auto;
           margin-right: auto;
-          text-transform: uppercase; }
-          html body .wrapper .main-box section article .titles a {
-            text-decoration: none;
-            color: #000; }
+          text-transform: uppercase;
+          color: #000;
+          margin-top: 25%; }
         html body .wrapper .main-box section article p {
-          font-size: 12px;
-          font-family: "Roboto", sans-serif;
           margin-top: 10px;
           margin-left: auto;
           margin-right: auto;
-          max-width: 40%; }
+          max-width: 50%;
+          font-size: 17px; }
+          @media screen and (min-width: 1281px) {
+            html body .wrapper .main-box section article p {
+              font-size: 12px;
+              font-family: "Roboto", sans-serif;
+              max-width: 40%; } }
+          @media screen and (max-width: 1281px) {
+            html body .wrapper .main-box section article p {
+              font-size: 12px;
+              font-family: "Roboto", sans-serif;
+              max-width: 40%; } }
+          @media screen and (max-width: 768px) {
+            html body .wrapper .main-box section article p {
+              max-width: 50%;
+              font-size: 17px; } }
+        @media screen and (min-width: 1281px) {
+          html body .wrapper .main-box section article {
+            min-height: 800px !important; } }
       html body .wrapper .main-box section.home, html body .wrapper .main-box section.contactos {
         background: #000; }
-        html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
-          max-width: 55%; }
-          @media screen and (max-width: 1281px) {
-            html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
-              margin-top: 25%;
-              max-width: 75%; } }
-          html body .wrapper .main-box section.home article .titles a, html body .wrapper .main-box section.contactos article .titles a {
+        html body .wrapper .main-box section.home article, html body .wrapper .main-box section.contactos article {
+          min-height: 660px; }
+          @media screen and (max-width: 768px) {
+            html body .wrapper .main-box section.home article, html body .wrapper .main-box section.contactos article {
+              min-height: 930px; } }
+          @media screen and (max-width: 480px) {
+            html body .wrapper .main-box section.home article, html body .wrapper .main-box section.contactos article {
+              min-height: 553px; } }
+          html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
+            max-width: 55%;
             color: #fff; }
-      html body .wrapper .main-box section.quienes-somos article .table {
-        float: left;
-        direction: ltr;
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 100%;
-        margin-top: 50px; }
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-          html body .wrapper .main-box section.quienes-somos article .table {
-            padding-left: 0;
-            padding-right: 0; } }
-        html body .wrapper .main-box section.quienes-somos article .table .col {
+            @media screen and (max-width: 1281px) {
+              html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
+                margin-top: 25%;
+                max-width: 75%; } }
+            @media screen and (max-width: 768px) {
+              html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
+                margin-top: 55%;
+                max-width: 98%;
+                font-size: 40px; } }
+            @media screen and (max-width: 480px) {
+              html body .wrapper .main-box section.home article .titles, html body .wrapper .main-box section.contactos article .titles {
+                margin-top: 84%;
+                max-width: 94%;
+                font-size: 21px; } }
+      html body .wrapper .main-box section.quienes-somos article {
+        min-height: 750px;
+        min-height: 600px; }
+        @media screen and (max-width: 480px) {
+          html body .wrapper .main-box section.quienes-somos article {
+            padding-top: 70px; }
+            html body .wrapper .main-box section.quienes-somos article .titles {
+              font-size: 40px; }
+            html body .wrapper .main-box section.quienes-somos article p {
+              font-size: 14px;
+              max-width: 90%; } }
+        html body .wrapper .main-box section.quienes-somos article .table {
           float: left;
           direction: ltr;
           padding-left: 10px;
           padding-right: 10px;
-          width: 33.33333%; }
+          width: 100%;
+          margin-top: 50px; }
           @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-            html body .wrapper .main-box section.quienes-somos article .table .col {
+            html body .wrapper .main-box section.quienes-somos article .table {
               padding-left: 0;
               padding-right: 0; } }
-          @media screen and (max-width: 480px) {
-            html body .wrapper .main-box section.quienes-somos article .table .col {
-              width: 100%; } }
-          @media screen and (max-width: 768px) {
-            html body .wrapper .main-box section.quienes-somos article .table .col {
-              width: 100%; } }
-          html body .wrapper .main-box section.quienes-somos article .table .col .inner-col {
+          html body .wrapper .main-box section.quienes-somos article .table .col {
             float: left;
             direction: ltr;
             padding-left: 10px;
             padding-right: 10px;
-            width: 16.66667%;
-            padding-left: 0;
-            padding-right: 0;
-            display: table;
-            height: 160px; }
+            width: 33.33333%; }
             @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col {
+              html body .wrapper .main-box section.quienes-somos article .table .col {
                 padding-left: 0;
                 padding-right: 0; } }
-            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col i {
-              font-size: 40px;
-              vertical-align: middle;
-              display: table-cell; }
-          html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 {
-            float: left;
-            direction: ltr;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 83.33333%;
-            padding-left: 0;
-            padding-right: 0; }
-            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 {
-                padding-left: 0;
-                padding-right: 0; } }
-            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 h3 {
-              font-size: 18px; }
-            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 p {
-              max-width: 100%; }
+            @media screen and (max-width: 480px) {
+              html body .wrapper .main-box section.quienes-somos article .table .col {
+                width: 100%; } }
+            @media screen and (max-width: 768px) {
+              html body .wrapper .main-box section.quienes-somos article .table .col {
+                width: 100%; } }
+            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col {
+              float: left;
+              direction: ltr;
+              padding-left: 10px;
+              padding-right: 10px;
+              width: 16.66667%;
+              padding-left: 0;
+              padding-right: 0;
+              display: table;
+              height: 160px; }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+                html body .wrapper .main-box section.quienes-somos article .table .col .inner-col {
+                  padding-left: 0;
+                  padding-right: 0; } }
+              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col i {
+                font-size: 40px;
+                vertical-align: middle;
+                display: table-cell; }
+            html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 {
+              float: left;
+              direction: ltr;
+              padding-left: 10px;
+              padding-right: 10px;
+              width: 83.33333%;
+              padding-left: 0;
+              padding-right: 0; }
+              @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+                html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 {
+                  padding-left: 0;
+                  padding-right: 0; } }
+              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 h3 {
+                font-size: 18px; }
+              html body .wrapper .main-box section.quienes-somos article .table .col .inner-col2 p {
+                max-width: 100%; }
+      @media screen and (max-width: 480px) {
+        html body .wrapper .main-box section.clientes article {
+          padding-top: 70px; }
+          html body .wrapper .main-box section.clientes article .titles {
+            font-size: 40px; }
+          html body .wrapper .main-box section.clientes article p {
+            font-size: 14px;
+            max-width: 90%; } }
       html body .wrapper .main-box section.clientes #gallery-1 {
         float: left;
         direction: ltr;
@@ -324,10 +403,21 @@ html body .wrapper {
             html body .wrapper .main-box section.clientes #gallery-1 .gallery-item {
               padding-left: 0;
               padding-right: 0; } }
-          html body .wrapper .main-box section.clientes #gallery-1 .gallery-item .gallery-icon img {
-            border: none; }
+          @media screen and (max-width: 480px) {
+            html body .wrapper .main-box section.clientes #gallery-1 .gallery-item {
+              width: 50%; } }
+          html body .wrapper .main-box section.clientes #gallery-1 .gallery-item .gallery-icon {
+            overflow: hidden;
+            position: relative; }
+            html body .wrapper .main-box section.clientes #gallery-1 .gallery-item .gallery-icon img {
+              border: none;
+              width: 100%;
+              height: auto; }
       html body .wrapper .main-box section.contactos {
         max-height: 490px; }
+        @media screen and (max-width: 480px) {
+          html body .wrapper .main-box section.contactos {
+            display: none; } }
         html body .wrapper .main-box section.contactos .titles {
           position: absolute;
           left: 0;
@@ -353,6 +443,12 @@ html body .wrapper {
         width: 100%;
         top: 0;
         left: 0; }
+        @media screen and (max-width: 768px) {
+          html body .wrapper .main-box section video {
+            display: none; } }
+        @media screen and (max-width: 480px) {
+          html body .wrapper .main-box section video {
+            display: none; } }
 
 .header {
   float: left;
@@ -374,7 +470,96 @@ html body .wrapper {
     width: 231px;
     margin-top: 130px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    position: relative;
+    z-index: 10; }
+  .header .tools {
+    float: left;
+    direction: ltr;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+    padding-top: 35px;
+    font-size: 25px; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      .header .tools {
+        padding-left: 0;
+        padding-right: 0; } }
+    .header .tools .menu, .header .tools .redes {
+      float: left;
+      direction: ltr;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 50%;
+      cursor: pointer; }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .header .tools .menu, .header .tools .redes {
+          padding-left: 0;
+          padding-right: 0; } }
+  .header .show-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10; }
+    .header .show-menu .nav, .header .show-menu .redes {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      float: left;
+      direction: ltr;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 50%;
+      margin-top: 35%;
+      text-transform: uppercase;
+      margin-top: 45%; }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .header .show-menu .nav, .header .show-menu .redes {
+          padding-left: 0;
+          padding-right: 0; } }
+      @media screen and (max-width: 768px) {
+        .header .show-menu .nav, .header .show-menu .redes {
+          width: 83.33333%; } }
+      @media screen and (max-width: 480px) {
+        .header .show-menu .nav, .header .show-menu .redes {
+          width: 50%; } }
+      .header .show-menu .nav a, .header .show-menu .redes a {
+        color: #fff;
+        text-decoration: none;
+        padding-right: 25px; }
+        .header .show-menu .nav a:hover, .header .show-menu .redes a:hover {
+          text-decoration: underline; }
+      @media screen and (min-width: 1281px) {
+        .header .show-menu .nav, .header .show-menu .redes {
+          margin-top: 25%; } }
+      @media screen and (max-width: 768px) {
+        .header .show-menu .nav, .header .show-menu .redes {
+          margin-top: 55%; } }
+      @media screen and (max-width: 480px) {
+        .header .show-menu .nav, .header .show-menu .redes {
+          margin-top: 120%; }
+          .header .show-menu .nav li, .header .show-menu .redes li {
+            margin-bottom: 10px; }
+          .header .show-menu .nav a, .header .show-menu .redes a {
+            padding-right: 0; } }
+    .header .show-menu .redes {
+      margin-top: 30%;
+      margin-top: 40%; }
+      @media screen and (min-width: 1281px) {
+        .header .show-menu .redes {
+          margin-top: 22%; } }
+      @media screen and (max-width: 768px) {
+        .header .show-menu .redes {
+          margin-top: 50%; } }
+      @media screen and (max-width: 480px) {
+        .header .show-menu .redes {
+          margin-top: 110%; } }
 
 footer {
   float: left;
@@ -396,32 +581,22 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
     width: 50%; }
+    @media screen and (max-width: 480px) {
+      footer .redes-contacto {
+        display: none; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
       footer .redes-contacto {
         padding-left: 0;
         padding-right: 0; } }
-    footer .redes-contacto li {
-      background-color: #fff;
-      color: #000;
-      font-size: 20px;
-      padding: 3px;
-      margin-right: 3px;
-      width: 24px;
-      height: 24px;
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      border-bottom-right-radius: 50%;
-      border-top-right-radius: 50%;
-      border-bottom-left-radius: 50%;
-      border-bottom-right-radius: 50%;
-      border-bottom-left-radius: 50%;
-      border-top-left-radius: 50%; }
   footer .service-footer {
     float: left;
     direction: ltr;
     padding-left: 10px;
     padding-right: 10px;
     width: 50%; }
+    @media screen and (max-width: 480px) {
+      footer .service-footer {
+        display: none; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
       footer .service-footer {
         padding-left: 0;
@@ -446,11 +621,15 @@ footer {
         display: table-cell;
         vertical-align: middle; }
   footer .float-contact {
-    position: absolute;
-    margin-top: -100px;
+    position: fixed;
+    bottom: 100px;
     z-index: 9;
     width: 132px;
-    right: 20px; }
+    right: 20px;
+    opacity: 0; }
+    @media screen and (max-width: 480px) {
+      footer .float-contact {
+        bottom: 30px; } }
     footer .float-contact .btns {
       float: right;
       color: #fff;

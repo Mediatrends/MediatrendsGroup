@@ -11,7 +11,9 @@
 
 		var tween = TweenMax.to(".logo", 1, {scale: 0.6,marginTop: -41});
 
-		var tween1 = TweenMax.fromTo("#header", 1, {height: 115},{height:100});
+		var tween1 = TweenMax.fromTo("#header", 0.5, {height: 115},{height:100});
+
+		var tween3 = TweenMax.to(".float-contact", 0.5, {opacity:1});
 
 		var tween2 = new TimelineMax ()
 				.add([
@@ -20,6 +22,7 @@
 				]);
 		
 		var scene = new ScrollScene().setPin("#header", {pushFollowers: false});
+
 		var scene0 = new ScrollScene({triggerElement:"#logo-active"})
 			.setTween(tween);
 
@@ -29,11 +32,15 @@
 		var scene2 = new ScrollScene({triggerElement:".contactos"})
 			.setTween(tween2);
 
+		var scene3 = new ScrollScene({triggerElement:"#logo-active"})
+			.setTween(tween3);
+
 		controller.addScene([
 			scene,
 			scene0,
 			scene1,
-			scene2
+			scene2,
+			scene3
 		]);
 		//show indicators (requires debug extension)
 		scene.addIndicators();
@@ -46,8 +53,8 @@
 	        invertHoverEffect: false,
 	        intensity:1,
 	        speed: {
-	            fadeIn: 200, // 200ms for fadeIn animations
-	            fadeOut: 800 // 800ms for fadeOut animations
+	            fadeIn: 50, // 200ms for fadeIn animations
+	            fadeOut: 100 // 800ms for fadeOut animations
 	        },
 	        onImageReady:function(img) {
 	            // this callback gets executed anytime an image is converted
@@ -75,6 +82,22 @@
 	    	});
 	    	
 	    });
+
+	    $('.open-menu').click(function(){
+	    	var body = $("html, body");
+	    	$('.show-menu').fadeIn(400,function(){
+	    		body.animate({scrollTop:0},{duration:500,easing:'swing'});
+	    	});
+	    });
+
+	    $('nav ul li a').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( $(this).attr('href') ).offset().top
+		    }, 500,function(){
+		    	$('.show-menu').fadeOut();
+		    });
+		    return false;
+		});
 	});
 	
 })(jQuery, this);

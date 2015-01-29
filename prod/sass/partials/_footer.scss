@@ -5,23 +5,14 @@ footer{
 	font:{size:8px;}
 	@extend .listas;
 	.redes-contacto{
+		@include gridle_hide(phoness-min);
 		@include gridle(6);
 		li{
-			background:{color:#fff}
-			color:#000;
-			font:{size:20px;}
-			padding:3px;
-			margin:{right:3px;}
-			width:24px;
-			height:24px;
-			@extend .text-center;
-			@include border-top-radius(50%);
-			@include border-right-radius(50%);
-			@include border-bottom-radius(50%);
-			@include border-left-radius(50%);
+			@extend .rrss-style;
 		}
 	}
 	.service-footer{
+		@include gridle_hide(phoness-min);
 		@include gridle(6);
 		@extend .text-right;
 		.btn_contact{
@@ -49,11 +40,15 @@ footer{
 		}
 	}
 	.float-contact{
-		position: absolute;
-		margin-top:-100px;
+		position: fixed;
+		bottom:100px;
 		z-index: 9;
 		width:132px;
 		right:20px;
+		opacity: 0;
+		@include gridle-state(phoness-min){
+			bottom:30px;
+		}
 		.btns{
 			@include gridle_float(right);
 			color:#fff;
